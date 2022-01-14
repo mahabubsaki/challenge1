@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cover {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: hsl(216, 50%, 16%);
+    min-width: 340px;
+    max-width: 340px;
+    height: 550px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.img-container {
+    position: relative;
+    transition: 2s ease-in;
+}
+.container img {
+    width: 299px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.effect {
+    width: 299px;
+    height: 298px;
+    background-color: #0194A3;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 1;
+    display: none;
+    
+}
+#view {
+    height: 32px;
+    width: 32px;
+    top: 129px;
+    left: 137px;
+    position: absolute;
+    display: none;
+}
+.img-container:hover .effect {
+    display: block;
+    opacity: 0.7;
+    
+}
+.img-container:hover #view {
+    display: block;
+}
+.container h2 {
+    font-size: 18px;
+    color: #19D6D7;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+.container p {
+    color: #778BA9;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.price-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+.price {
+    display: flex;
+    align-items: center;
+}
+.price img {
+    width: 16px;
+    height: 20px;
+    margin-right: 5px;
+}
+.price p {
+    color: #1DF4F5;
+    font-weight: 600;
+}
+.time img {
+    width: 16px;
+    height: 20px;
+}
+.time {
+    display: flex;
+    align-items: center;
+}
+.time p {
+    color: #96B3DE;
+    margin-left: 5px;
+}
+hr {
+    border: 1px solid #2E4058;
+    margin-bottom: 10px;
+}
+.authot-name {
+    display: flex;
+    align-items: center;
+}
+.authot-name img{
+    height: 32px;
+    width: 32px;
+    border: 1px solid white;
+}
+.authot-name a{
+    text-decoration: none;
+    color: #12AFAD;
+}
+.authot-name p {
+    color: #859BBC;
+    margin-left: 10px;
+}
